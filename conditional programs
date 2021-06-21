@@ -1,0 +1,118 @@
+// if program
+#include<stdio.h> 
+int main()
+{
+    int password;
+    printf("enter your password: ");
+    scanf("%d", &password);
+    if(password==0)
+    {
+        printf("welcome");
+    }
+}
+
+
+//if-else program
+#include<stdio.h> 
+int main()
+{
+    int age;
+    printf("enter your age: ");
+    scanf("%d", &age);
+    if(age>18)
+    {
+        printf("You are eligible to vote");
+    }
+    else
+    {
+        printf("not eligible to vote");
+    }
+}
+
+
+//if-else-if program
+#include<stdio.h>
+int main()
+{
+    int marks;
+    printf("enter marks:");
+    scanf("%d", &marks);
+    if(marks>90)
+    {
+        printf("outstanding");
+    }
+    else if(marks>80)
+    {
+        printf("good");
+    }
+    else
+    {
+        printf("average");
+    }
+}
+
+// nested if else
+#include<stdio.h>
+int main()
+{
+    int a=90, b=5, c=10;
+    if(a>b)
+    {
+        if(a>c)
+        {
+            printf("%d", a);
+        }
+    else
+    {
+        printf("%d", c);
+    }
+}
+else
+{
+    if(b>c)
+    {
+        printf("%d", b);
+    }
+     else
+    {
+       printf("%d", c);
+    }
+}
+}
+
+//switch statement
+//program to perform arithmetic operation using switch case
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    int ch;
+    printf("enter two numbers: ");
+    scanf("%d%d", &a,&b);
+    printf("enter choice");
+    scanf("%d", &ch);
+     switch()
+     {
+    
+        case1: c=a+b;
+          printf("%d", c);
+        break;
+        case2: c=a-b;
+          printf("%d", c);
+        break;
+        case3: c=a*b;
+          printf("%d", c);
+        break;
+        case4: c=a/b;
+          printf("%d", c);
+        break;
+        case5: c=a%b;
+          printf("%d", c);
+        break;
+        default: 
+          printf("invalid choice");
+        
+     }
+    
+}
